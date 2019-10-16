@@ -1,0 +1,13 @@
+@import './Vars.scss';
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $main-color-darkMode;
+  background-color: $main-bgColor-darkMode;
+  font-family: 'Roboto', sans-serif;
+}
