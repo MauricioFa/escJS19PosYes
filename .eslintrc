@@ -4,7 +4,10 @@
     "es6": true,
     "node": true
   },
-  "extends": ["airbnb"],
+  "extends": [
+	"airbnb",
+	"plugin:prettier/recommended"
+	],
   "globals": {
     "document": false,
     "escape": false,
@@ -21,10 +24,18 @@
   "plugins": [
     "react",
     "jsx-a11y",
-    "import"
+    "import",
   ],
   "rules": {
-    "react/jsx-filename-extension": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
     "array-bracket-spacing": 2,
     "arrow-body-style": 0,
     "block-scoped-var": 2,
