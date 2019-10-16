@@ -2,12 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import reducer from './reducers';
 import App from './routes/App';
+import reducer from './reducers';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import './assets/styles/App.scss';
 
+library.add(faCodeBranch, faGithub);
+
 const initialState = {
-  loginOn: false,
+  loginOn: true,
   cart: [],
   products: [],
 };
