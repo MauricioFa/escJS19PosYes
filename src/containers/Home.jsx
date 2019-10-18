@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Button } from '@material-ui/core';
 
 const Home = (props) => {
   const { loginOn } = props;
@@ -17,11 +18,14 @@ const Home = (props) => {
           <FontAwesomeIcon icon={['fab', 'github']} />
         </h1>
       )}
+      <Button variant='contained' color='primary'>
+        Hola Mundo
+      </Button>
     </>
   );
 };
 
-const mapStateToProps = (state) => { 
+const mapStateToProps = (state) => {
   return { loginOn: state.loginOn };
 };
 
