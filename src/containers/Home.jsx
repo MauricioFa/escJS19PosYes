@@ -5,8 +5,8 @@ const Home = () => {
   
   return (
     <>
-      <PasswordTF textPlaceholder='Contraseña' />
-      <PasswordFC textPlaceholder='Clave' />
+      <PasswordFC textPlaceholder='Contraseña' />
+      <PasswordTF textPlaceholder='Clave' helperText='Mínimo 8 carácteres' />
     </>
   );
 };

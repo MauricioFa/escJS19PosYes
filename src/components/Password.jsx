@@ -28,7 +28,8 @@ export const PasswordFC = (props) => {
         {props.textPlaceholder}
       </InputLabel>
       <Input
-        id='adornment-password'
+        required={true}
+        error={false}
         type={values.showPassword ? 'text' : 'password'}
         value={values.password}
         variant='outlined'
@@ -60,11 +61,14 @@ export const PasswordTF = (props) => {
 
   return (
     <TextField
+      required={true}
+      error={false}
       className='password-component'
       variant='outlined'
       type={values.showPassword ? 'text' : 'password'}
       label={props.textPlaceholder}
       value={values.password}
+      helperText={props.helperText}
       onChange={handleChange({values, setValues}, 'password')}
       InputProps={{
         endAdornment: (
