@@ -5,7 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const InputEmail = (props) => {
-  const [value, setValue] = React.useState({email: ''});
+  const [value, setValue] = React.useState({ email: '' });
 
   const handleChange = (event) => {
     setValue({ ...value, email: event.target.value });

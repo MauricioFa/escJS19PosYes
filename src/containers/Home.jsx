@@ -1,16 +1,12 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import InputEmail from '../components/InputEmail';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <>
-      <InputEmail variant='outlined' label='Correo electrónico' />
+      <Link to='/login'>LOGIN</Link>
     </>
   );
 };
 
-export default connect(
-  null,
-  null
-)(Home);
+export default Home;

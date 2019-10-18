@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import {
+  faUserCircle,
+  faEyeSlash,
+  faEye,
+} from '@fortawesome/free-solid-svg-icons';
 import App from './routes/App';
 import reducer from './reducers';
 import './assets/styles/App.scss';
 
-library.add(faUserCircle);
+library.add(faUserCircle, faEyeSlash, faEye);
 
 const initialState = {
   loginOn: true,
