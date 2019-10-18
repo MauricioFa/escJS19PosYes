@@ -1,35 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Button } from '@material-ui/core';
+import InputEmail from '../components/InputEmail';
 
-const Home = (props) => {
-  const { loginOn } = props;
+const Home = () => {
   return (
     <>
-      {loginOn ? (
-        <h1>
-          <span>Home login ON </span>
-          <FontAwesomeIcon icon={['fas', 'code-branch']} />
-        </h1>
-      ) : (
-        <h1>
-          <span>Home login OFF </span>
-          <FontAwesomeIcon icon={['fab', 'github']} />
-        </h1>
-      )}
-      <Button variant='contained' color='primary'>
-        Hola Mundo
-      </Button>
+      <InputEmail variant='outlined' label='Correo electrónico' />
     </>
   );
 };
 
-const mapStateToProps = (state) => {
-  return { loginOn: state.loginOn };
-};
-
 export default connect(
-  mapStateToProps,
+  null,
   null
 )(Home);
