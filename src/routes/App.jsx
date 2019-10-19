@@ -4,6 +4,7 @@ import Home from '../containers/Home';
 import Login from '../containers/Login';
 import LogUp from '../containers/LogUp';
 import NotFound from '../containers/NotFound';
+import RecoverPassword from '../containers/RecoverPassword';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route exact path='/index.html' component={Home} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/logUp' component={LogUp} />
+        <Route exact path='/recoverPw' component={RecoverPassword} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>

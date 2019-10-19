@@ -6,7 +6,13 @@ const Home = () => {
     <>
       <Link to='/login'>Login</Link>
       <br />
+      <br />
+      <br />
       <Link to='/logUp'>LogUp</Link>
+      <br />
+      <br />
+      <br />
+      <Link to='/recoverPW'>Recover Password</Link>
     </>
   );
 };

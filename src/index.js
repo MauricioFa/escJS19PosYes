@@ -8,11 +8,16 @@ import {
   faEyeSlash,
   faEye,
 } from '@fortawesome/free-solid-svg-icons';
+import {
+  faFacebook,
+  faTwitter,
+  faGoogle,
+} from '@fortawesome/free-brands-svg-icons';
 import App from './routes/App';
 import reducer from './reducers';
 import './assets/styles/App.scss';
 
-library.add(faUserCircle, faEyeSlash, faEye);
+library.add(faUserCircle, faEyeSlash, faEye, faFacebook, faTwitter, faGoogle);
 
 const initialState = {
   loginOn: true,
