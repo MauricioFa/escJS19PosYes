@@ -1,0 +1,14 @@
+$height-container: 80vh;
+$width-container: 100vw;
+
+$height-form: 50vh;
+$width-form: 90vw;
+
+@import './GeneralLogInUpRpw.scss';
+
+.linkToRecoverPW-simpleTxt {
+  border-bottom: 2px solid gray;
+  padding-bottom: 1em;
+  width: 80%;
+  text-align: center;
+}

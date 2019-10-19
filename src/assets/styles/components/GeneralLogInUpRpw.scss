@@ -1,0 +1,31 @@
+.container-logInUpRpw {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: $height-container;
+  width: $width-container;
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+}
+
+.form-logInUpRpw {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: $height-form;
+  width: $width-form;
+}
+
+.form-logInUpRpw input {
+  font-size: 1.6em;
+}
+
+.form-logInUpRpw .MuiIconButton-root {
+  padding: 0;
+  margin: 0 10%;
+  font-size: 200%;
+}
+
+.form-logInUpRpw .MuiButton-label {
+  font-size: 2em;
+}

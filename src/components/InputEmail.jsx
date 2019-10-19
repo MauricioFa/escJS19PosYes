@@ -5,6 +5,7 @@ import TextField from '@material-ui/core/TextField';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const InputEmail = (props) => {
+  const { label, variant } = props;
   const [value, setValue] = React.useState({ email: '' });
 
   const handleChange = (event) => {
@@ -13,11 +14,14 @@ const InputEmail = (props) => {
 
   return (
     <TextField
-      label={props.label}
       type='email'
       name='email'
       autoComplete='email'
-      variant={props.variant}
+      margin='normal'
+      className='component-inputEmail'
+      required={true}
+      label={label}
+      variant={variant}
       onChange={handleChange}
       InputProps={{
         endAdornment: (

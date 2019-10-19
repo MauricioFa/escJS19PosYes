@@ -17,6 +17,7 @@ const handleClickShowPassword = ({ values, setValues }) => (event) => {
 };
 
 export const PasswordFC = (props) => {
+  const [textPlaceholder] = props;
   const [values, setValues] = useState({
     password: '',
     showPassword: false,
@@ -24,9 +25,7 @@ export const PasswordFC = (props) => {
 
   return (
     <FormControl className='password-component'>
-      <InputLabel htmlFor='adornment-password'>
-        {props.textPlaceholder}
-      </InputLabel>
+      <InputLabel htmlFor='adornment-password'>{textPlaceholder}</InputLabel>
       <Input
         required={true}
         error={false}
@@ -34,7 +33,7 @@ export const PasswordFC = (props) => {
         value={values.password}
         variant='outlined'
         onChange={handleChange({ values, setValues }, 'password')}
-        endAdornment={
+        endAdornment={(
           <InputAdornment position='end'>
             <IconButton
               aria-label='toggle password visibility'
@@ -47,13 +46,14 @@ export const PasswordFC = (props) => {
               )}
             </IconButton>
           </InputAdornment>
-        }
+        )}
       />
     </FormControl>
   );
 };
 
 export const PasswordTF = (props) => {
+  const { textPlaceholder, helperText } = props;
   const [values, setValues] = useState({
     password: '',
     showPassword: false,
@@ -63,12 +63,12 @@ export const PasswordTF = (props) => {
     <TextField
       required={true}
       error={false}
-      className='password-component'
+      className='component-password'
       variant='outlined'
       type={values.showPassword ? 'text' : 'password'}
-      label={props.textPlaceholder}
+      label={textPlaceholder}
       value={values.password}
-      helperText={props.helperText}
+      helperText={helperText}
       onChange={handleChange({ values, setValues }, 'password')}
       InputProps={{
         endAdornment: (
@@ -76,6 +76,7 @@ export const PasswordTF = (props) => {
             <IconButton
               edge='end'
               aria-label='toggle password visibility'
+              color='primary'
               onClick={handleClickShowPassword({ values, setValues })}
             >
               {values.showPassword ? (
