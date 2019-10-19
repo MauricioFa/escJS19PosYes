@@ -1,0 +1,39 @@
+@import '../Vars.scss';
+@import './GeneralLogInUpRpw.scss';
+
+.section-login {
+  @extend %section-logIUR;
+  @include heightAndWidth(90vh, 100vw);
+
+  h1 {
+    @extend %section-logIUR-h1;
+  }
+}
+
+.container-login {
+  @extend %container-logIUR;
+  @include heightAndWidth(86%, 90vw);
+}
+
+.form-login {
+  @extend %form-logIUR;
+  @include heightAndWidth(50%, 100%);
+}
+
+.form-login input {
+  @extend %form-logIUR-input;
+}
+
+.form-login .MuiIconButton-root {
+  @extend %form-logIUR-MuiIconButton-root;
+}
+
+.form-login .MuiButton-label {
+  @extend %form-logIUR-MuiButton-label;
+}
+
+.linkToRpw-login {
+  @extend %borderLineBottom;
+  @include heightAndWidth(initial, 86%);
+  text-align: center;
+}

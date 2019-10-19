@@ -1,0 +1,51 @@
+@import '../Vars.scss';
+@import './GeneralLogInUpRpw.scss';
+
+.section-logUp {
+  @extend %section-logIUR;
+  @include heightAndWidth(90vh, 100vw);
+
+  h1 {
+    @extend %section-logIUR-h1;
+  }
+}
+
+.container-logUp {
+  @extend %container-logIUR;  
+  @include heightAndWidth(98%, 90vw);
+}
+
+.form-logUp {
+  @extend %form-logIUR;
+  @include heightAndWidth(60%, 100%);
+}
+
+.form-logUp input {
+  @extend %form-logIUR-input;
+}
+
+.form-logUp .MuiIconButton-root {
+  @extend %form-logIUR-MuiIconButton-root;
+}
+
+.form-logUp .MuiButton-label {
+  @extend %form-logIUR-MuiButton-label;
+}
+
+.seccion-logUp-others {
+  @extend %borderLineBottom;
+  @include heightAndWidth(initial, 96%);
+  text-align: center;
+  margin-top: 1.4em;
+  margin-bottom: 1.0em;
+  
+  span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .section-logUp-link { 
+    font-size: 3em;
+  }
+}

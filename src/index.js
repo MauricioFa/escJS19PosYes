@@ -3,13 +3,21 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCodeBranch } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import {
+  faUserCircle,
+  faEyeSlash,
+  faEye,
+} from '@fortawesome/free-solid-svg-icons';
+import {
+  faFacebook,
+  faTwitter,
+  faGoogle,
+} from '@fortawesome/free-brands-svg-icons';
 import App from './routes/App';
 import reducer from './reducers';
 import './assets/styles/App.scss';
 
-library.add(faCodeBranch, faGithub);
+library.add(faUserCircle, faEyeSlash, faEye, faFacebook, faTwitter, faGoogle);
 
 const initialState = {
   loginOn: true,
