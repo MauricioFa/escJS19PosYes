@@ -1,0 +1,42 @@
+%section-logIUR {
+  display: flex;
+  justify-content: center;
+}
+
+%section-logIUR-h1 {
+  font-size: 2em;
+}
+
+%container-logIUR {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+}
+
+%form-logIUR {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+%form-logIUR-input {
+  font-size: 1.6em;
+}
+
+%form-logIUR-MuiIconButton-root {
+  padding: 0;
+  margin: 0 10%;
+  font-size: 200%;
+  font-weight: inherit;
+}
+
+%form-logIUR-MuiButton-label {
+  font-size: 2em;
+}
+
+%borderLineBottom {
+  border-bottom: 2px solid gray;
+  padding-bottom: 1em;
+}

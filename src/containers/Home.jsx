@@ -1,31 +1,20 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
-const Home = (props) => {
-  const { loginOn } = props;
+const Home = () => {
   return (
     <>
-      {loginOn ? (
-        <h1>
-          <span>Home login ON </span>
-          <FontAwesomeIcon icon={['fas', 'code-branch']} />
-        </h1>
-      ) : (
-        <h1>
-          <span>Home login OFF </span>
-          <FontAwesomeIcon icon={['fab', 'github']} />
-        </h1>
-      )}
+      <Link to='/login'>Login</Link>
+      <br />
+      <br />
+      <br />
+      <Link to='/logUp'>LogUp</Link>
+      <br />
+      <br />
+      <br />
+      <Link to='/recoverPW'>Recover Password</Link>
     </>
   );
 };
 
-const mapStateToProps = (state) => { 
-  return { loginOn: state.loginOn };
-};
-
-export default connect(
-  mapStateToProps,
-  null
-)(Home);
+export default Home;

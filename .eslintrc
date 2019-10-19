@@ -5,8 +5,8 @@
     "node": true
   },
   "extends": [
-	"airbnb",
-	"plugin:prettier/recommended"
+    "airbnb",
+    "plugin:prettier/recommended"
 	],
   "globals": {
     "document": false,
@@ -24,7 +24,7 @@
   "plugins": [
     "react",
     "jsx-a11y",
-    "import",
+    "import"
   ],
   "rules": {
     "react/jsx-filename-extension": [
