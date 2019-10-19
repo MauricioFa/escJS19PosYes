@@ -33,7 +33,7 @@ export const PasswordFC = (props) => {
         value={values.password}
         variant='outlined'
         onChange={handleChange({ values, setValues }, 'password')}
-        endAdornment={(
+        endAdornment={
           <InputAdornment position='end'>
             <IconButton
               aria-label='toggle password visibility'
@@ -46,7 +46,7 @@ export const PasswordFC = (props) => {
               )}
             </IconButton>
           </InputAdornment>
-        )}
+        }
       />
     </FormControl>
   );

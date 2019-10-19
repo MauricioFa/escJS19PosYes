@@ -2,24 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@material-ui/core';
 import InputEmail from '../components/InputEmail';
-import { PasswordTF } from '../components/Password';
-import '../assets/styles/components/Login.scss';
+import '../assets/styles/components/RecoverPassword.scss';
 
-const Login = () => {
+const RecoverPassword = () => {
   return (
-    <section className='section-login'>
-      <div className='container-login'>
-        <h1>Ingresa a la cuenta</h1>
-        <form action='' method='get' className='form-login'>
+    <section className='section-Rpw'>
+      <div className='container-Rpw'>
+        <h1>Recuperar la contraseña</h1>
+        <form action='' method='get' className='form-Rpw'>
           <InputEmail
             label='Correo electrónico'
             variant='outlined'
             className='component-inputEmail'
-          />
-          <PasswordTF
-            textPlaceholder='Clave'
-            helperText='Mínimo 8 caracteres'
-            className='component-password'
           />
           <Button
             type='submit'
@@ -27,14 +21,14 @@ const Login = () => {
             variant='contained'
             className='component-button'
           >
-            INGRESAR
+            RESTABLECER
           </Button>
         </form>
-        <Link to='/recoverPW' className='linkToRpw-login'>
-          <h2>¿Recuperar contraseña?</h2>
+        <Link to='/login' className='linkToLogin-Rpw'>
+          <h2>Volver a iniciar de sesión</h2>
         </Link>
         <div>
-          <p className='linkToLogUp-login'>Si no tienes una cuenta</p>
+          <p className='linkToLogUp-Rpw'>Si no tienes una cuenta</p>
           <Link to='/logUp'>
             <h2>CREAR CUENTA</h2>
           </Link>
@@ -44,4 +38,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default RecoverPassword;
