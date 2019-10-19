@@ -42,8 +42,3 @@
   width: 80%;
   text-align: center;
 }
-
-@mixin heightAndWidth($height-form: initial, $width-form: inherit){
-  height: $height-form;
-  width: $width-form;
-}
