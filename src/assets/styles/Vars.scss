@@ -11,3 +11,8 @@ $color-aux-lightMode: rgb(63, 81, 181);
 $main-color: $color-lightMode;
 $main-bgColor: $bgColor-lightMode;
 $color-aux: $color-aux-lightMode;
+
+@mixin heightAndWidth($height-form: initial, $width-form: inherit){
+  height: $height-form;
+  width: $width-form;
+}
